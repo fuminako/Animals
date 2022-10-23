@@ -14,6 +14,13 @@ public class Flying extends Birds {
         return typeMove;
     }
 
+    @Override
+    public String toString() {
+        return "Травоядное " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
+                ", питание: " + eat() + ", сон: " + sleep() + ",тип передвижения: " + getTypeMove() +
+                ", перемещение: " + move() + ". " + hunt() + ", " + fly() + "; " + getClass();
+    }
+
     public String eat() {
         return "ест еду клювом";
     }
@@ -32,12 +39,5 @@ public class Flying extends Birds {
 
     public String hunt() {
         return "Налетает на жертву сверху и захватывает клювом";
-    }
-
-    @Override
-    public String toString() {
-        return "Травоядное " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
-                ", питание: " + eat() + ", сон: " + sleep() + ",тип передвижения: " + getTypeMove() +
-                ", перемещение: " + move() + ". " + hunt() + ", " + fly() + "; " + getClass();
     }
 }

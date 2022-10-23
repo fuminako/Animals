@@ -17,6 +17,14 @@ public class Herbivores extends Mammals {
         return typeFood;
     }
 
+    @Override
+    public String toString() {
+        return "Травоядное " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
+                ", питание: " + eat() + ",тип питания: " + getTypeFood() + ", сон: " + sleep() +
+                ", перемещение: " + move() + ", скорость перемещения: " + getMovementSpeed() + ". " + pasture() + ", " + walk() +
+                "; " + getClass();
+    }
+
     public String eat() {
         return "медленно пережёвывают растительную пищу";
     }
@@ -36,15 +44,4 @@ public class Herbivores extends Mammals {
     public final String pasture() {
         return "Пасётся на поле";
     }
-
-
-    @Override
-    public String toString() {
-        return "Травоядное " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
-                ", питание: " + eat() + ",тип питания: " + getTypeFood() + ", сон: " + sleep() +
-                ", перемещение: " + move() + ", скорость перемещения: " + getMovementSpeed() + ". " + pasture() + ", " + walk() +
-                "; " + getClass();
-    }
-
-
 }

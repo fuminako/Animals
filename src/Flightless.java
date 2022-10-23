@@ -14,6 +14,13 @@ public class Flightless extends Birds {
         return typeMove;
     }
 
+    @Override
+    public String toString() {
+        return "Травоядное " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
+                ", питание: " + eat() + ", сон: " + sleep() + ",тип передвижения: " + getTypeMove() +
+                ", перемещение: " + move() + ". " + hunt() + ", " + walk() + "; " + getClass();
+    }
+
     public String eat() {
         return "ест еду клювом";
     }
@@ -34,10 +41,4 @@ public class Flightless extends Birds {
         return "Вытягивает червяков и жуков клювом";
     }
 
-    @Override
-    public String toString() {
-        return "Травоядное " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
-                ", питание: " + eat() + ", сон: " + sleep() + ",тип передвижения: " + getTypeMove() +
-                ", перемещение: " + move() + ". " + hunt() + ", " + walk() + "; " + getClass();
-    }
 }

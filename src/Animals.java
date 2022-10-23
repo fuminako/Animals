@@ -13,6 +13,11 @@ public abstract class Animals {
         return name;
     }
 
+
+    public final int getAge() {
+        return age;
+    }
+
     public final void setName(String name) {
         if (name == null || name.isBlank()) {
             this.name = "Животное";
@@ -21,19 +26,10 @@ public abstract class Animals {
         }
     }
 
-    public final int getAge() {
-        return age;
-    }
-
     public final void setAge(int age) {
         this.age = Math.max(age, 0);
     }
 
-    public abstract String eat();
-
-    public abstract String sleep();
-
-    public abstract String move();
 
     @Override
     public boolean equals(Object o) {
@@ -47,4 +43,10 @@ public abstract class Animals {
     public int hashCode() {
         return Objects.hash(name);
     }
+
+    public abstract String eat();
+
+    public abstract String sleep();
+
+    public abstract String move();
 }
