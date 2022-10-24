@@ -14,15 +14,6 @@ public class Predator extends Mammals {
         return typeFood;
     }
 
-
-    @Override
-    public String toString() {
-        return "Хищник " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
-                ", питание: " + eat() + ",тип питания: " + getTypeFood() + ", сон: " + sleep() +
-                ", перемещение: " + move() + ", скорость перемещения: " + getMovementSpeed() + ". " + hunt() + ", " + walk() +
-                "; " + getClass();
-    }
-
     public String eat() {
         return "съедает жертву";
     }
@@ -42,4 +33,13 @@ public class Predator extends Mammals {
     public String hunt() {
         return "Неожиданно нападает на жертву";
     }
+
+    @Override
+    public String toString() {
+        return "Хищник " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
+                ", питание: " + eat() + ",тип питания: " + getTypeFood() + ", сон: " + sleep() +
+                ", перемещение: " + move() + ", скорость перемещения: " + getMovementSpeed() + ". " + hunt() + ", " + walk() +
+                "; " + getClass();
+    }
+
 }

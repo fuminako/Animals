@@ -30,6 +30,11 @@ public abstract class Animals {
         this.age = Math.max(age, 0);
     }
 
+    public abstract String eat();
+
+    public abstract String sleep();
+
+    public abstract String move();
 
     @Override
     public boolean equals(Object o) {
@@ -44,9 +49,4 @@ public abstract class Animals {
         return Objects.hash(name);
     }
 
-    public abstract String eat();
-
-    public abstract String sleep();
-
-    public abstract String move();
 }

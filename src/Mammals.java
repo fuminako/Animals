@@ -14,17 +14,16 @@ public abstract class Mammals extends Animals {
 
     public String getLivingEnvironment() {
         return livingEnvironment;
-    }
-
-    public int getMovementSpeed() {
-        return movementSpeed;
-    }
-
-    public abstract String eat();
+    }    public abstract String eat();
 
     public abstract String sleep();
 
     public abstract String move();
 
     public abstract String walk();
+
+    public int getMovementSpeed() {
+        return movementSpeed;
+    }
+
 }

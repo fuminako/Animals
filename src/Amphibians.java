@@ -15,12 +15,6 @@ public class Amphibians extends Animals {
         return livingEnvironment;
     }
 
-    @Override
-    public String toString() {
-        return "Земноводное " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
-                ", питание: " + eat() + ", сон: " + sleep() + ", перемещение: " + move() + ", охота: " + hunt() + "; " + getClass();
-    }
-
     public String eat() {
         return "заглатывает пойманную добычу";
     }
@@ -36,4 +30,11 @@ public class Amphibians extends Animals {
     public String hunt() {
         return "Сливается с окружением и хватает жертву";
     }
+
+    @Override
+    public String toString() {
+        return "Земноводное " + getName() + ", возраст: " + getAge() + ", среда проживания: " + getLivingEnvironment() +
+                ", питание: " + eat() + ", сон: " + sleep() + ", перемещение: " + move() + ", охота: " + hunt() + "; " + getClass();
+    }
+
 }
